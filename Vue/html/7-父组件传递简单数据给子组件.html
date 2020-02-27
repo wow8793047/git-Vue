@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--使用组件-->
+    <!--将父组件的数据传递给子组件-->
+    <comp1 :msg="xx"></comp1>
+</div>
+<script>
+    const comp1 = {
+        template:"<h1>{{msg}}</h1>",
+        //接收父组件传递的数据
+        props:["msg"]
+    };
+    //注册全局组件  参数1:使用定义的组件时的名称,参数2:组件对象
+    Vue.component("comp1",comp1);
+    var app = new Vue({
+        el:"#app",
+        data:{
+            xx:"父组件信息"
+        }
+    })
+</script>
+</body>
+</html>
