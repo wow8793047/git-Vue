@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.Sys_userMapper">
+
+    <resultMap id="s_userMap" type="s_user">
+        <id column="userId" property="id"/>
+        <id column="username" property="username"/>
+        <id column="email" property="email"/>
+        <id column="password" property="password"/>
+        <id column="phoneNum" property="phoneNum"/>
+        <collection property="roles" ofType="s_role">
+            <id column="roleId" property="id"/>
+            <id column="roleName" property="roleName"/>
+            <id column="roleDesc" property="roleDesc"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="findAll" resultMap="s_userMap">
+        SELECT * FROM (sys_user u LEFT JOIN sys_user_role ur ON u.`id`=ur.`userId`) LEFT JOIN sys_role r ON r.`id`=ur.`roleId`
+    </select>
+
+</mapper>

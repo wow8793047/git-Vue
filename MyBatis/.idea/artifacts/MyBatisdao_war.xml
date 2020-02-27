@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MyBatisdao:war">
+    <output-path>$PROJECT_DIR$/MyBatisdao/target</output-path>
+    <root id="archive" name="MyBatis-dao-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="MyBatisdao:war exploded" />
+    </root>
+  </artifact>
+</component>

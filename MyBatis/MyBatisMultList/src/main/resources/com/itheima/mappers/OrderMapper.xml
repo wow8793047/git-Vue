@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.OrderMapper">
+    
+    <resultMap id="orderMap" type="order">
+        <!--手动指定字段与实体的映射关系-->
+        <id column="oid" property="id"/>
+        <result column="ordertime" property="ordertime"/>
+        <result column="total" property="total"/>
+        <!--<result column="uid" property="user.id"/>
+        <result column="username" property="user.username"/>
+        <result column="password" property="user.password"/>
+        <result column="birthday" property="user.birthday"/>-->
+        <!--property:当前实体属性名  javaType:属性的类型-->
+        <association property="orders" javaType="user" fetchType="lazy"
+
+        select="com.itheima.mapper.UserMapper.findById">
+
+        </association>
+    </resultMap>
+    
+    <select id="findAll" resultMap="orderMap">
+        select * from user
+    </select>
+
+
+
+</mapper>

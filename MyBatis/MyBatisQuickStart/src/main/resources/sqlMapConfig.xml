@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--加载jdbc配置文件-->
+    <properties resource="jdbc.properties"/>
+    <!--将映射文件中需要的参数类型,或结果类型取别名-->
+    <typeAliases>
+        <typeAlias type="com.itheima.pojo.User" alias="user"/>
+    </typeAliases>
+
+    <!--数据源环境-->
+    <environments default="test">
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--加载映射映射-->
+    <mappers>
+        <mapper resource="com/itheima/mapper/userMapper.xml"/>
+    </mappers>
+
+</configuration>

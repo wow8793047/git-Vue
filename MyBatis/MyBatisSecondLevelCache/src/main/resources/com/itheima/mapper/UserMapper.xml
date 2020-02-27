@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.UserMapper">
+    <!--使用mybatis的二级缓存机制,默认配置-->
+    <cache></cache>
+    <!--抽取sql-->
+    <sql id="selectUser">SELECT * FROM USER</sql>               <!--该sql映射使用二级缓存-->
+    <select id="findById" resultType="user" parameterType="int" useCache="true">
+        <include refid="selectUser"/> WHERE id=#{id}
+    </select>
+    <delete id="delUserById" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+    <delete id="delSysUserRoleByUserId" parameterType="int">
+        delete from sys_user_role where userId=#{id}
+    </delete>
+</mapper>

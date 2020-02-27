@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MyBatisConfig:war">
+    <output-path>$PROJECT_DIR$/MyBatisConfig/target</output-path>
+    <root id="archive" name="MyBatisConfig-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="MyBatisConfig:war exploded" />
+    </root>
+  </artifact>
+</component>

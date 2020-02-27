@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/MyBatisAnnotation" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatisConfig" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatisdao" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatisMultList" />
+    <file type="web" url="file://$PROJECT_DIR$/SSM" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisQuickStart/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisdao/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisMultList/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisSecondLevelCache/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisLazyLoad/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

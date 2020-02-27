@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisAnnotation/MyBatisAnnotation.iml" filepath="$PROJECT_DIR$/MyBatisAnnotation/MyBatisAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisConfig/MyBatisConfig.iml" filepath="$PROJECT_DIR$/MyBatisConfig/MyBatisConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisLazyLoad/MyBatisLazyLoad.iml" filepath="$PROJECT_DIR$/MyBatisLazyLoad/MyBatisLazyLoad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisMultList/MyBatisMultList.iml" filepath="$PROJECT_DIR$/MyBatisMultList/MyBatisMultList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisQuickStart/MyBatisQuickStart.iml" filepath="$PROJECT_DIR$/MyBatisQuickStart/MyBatisQuickStart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisSecondLevelCache/MyBatisSecondLevelCache.iml" filepath="$PROJECT_DIR$/MyBatisSecondLevelCache/MyBatisSecondLevelCache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisdao/MyBatisdao.iml" filepath="$PROJECT_DIR$/MyBatisdao/MyBatisdao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
+    </modules>
+  </component>
+</project>
