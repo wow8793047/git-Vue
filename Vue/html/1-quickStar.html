@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vuejs-2.5.16.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="num"><button @click="num++">加</button><button @click="num--">减</button><br>
+        {{name}}{{num}}
+    </div>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            name:"aaa",
+            num:1
+        }
+    })
+</script>
+</body>
+</html>
